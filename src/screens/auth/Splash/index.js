@@ -6,4 +6,4 @@ const Splash = () => {
         <Text>You'll Find All you need Here!</Text>
     )
 }
-export default Splash
+export default Splash;
