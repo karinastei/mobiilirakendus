@@ -1,9 +1,11 @@
 import React, {useState} from "react";
-import { View, Text } from "react-native";
+import { View, Text} from "react-native";
 import AuthHeader from "../../../components/AuthHeader";
 import Input from "../../../components/Input";
 import Checkbox from "../../../components/Checkbox";
+import Button from "../../../components/Button";
 import { styles } from "./styles";
+import Separator from "../../../components/Separator";
 
 const Signup = () => {
     const [checked, setChecked] = useState(false)
@@ -18,6 +20,8 @@ const Signup = () => {
                 <Checkbox checked={checked} onCheck={setChecked}/>
                 <Text style={styles.agreeText}>I agree with <Text style={styles.agreeTextBold}>Terms</Text> & <Text style={styles.agreeTextBold}>Privacy</Text></Text>
             </View>
+            <Button style={styles.button} title="Sign Up"/>
+            <Separator text="Or sign up with"/>
         </View>
     )
 }

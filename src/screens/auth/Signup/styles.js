@@ -38,5 +38,8 @@ export const styles = StyleSheet.create({
         marginHorizontal: 14,
         fontWeight: 'bold'
 
+    },
+    button: {
+        marginVertical: 20
     }
 })
