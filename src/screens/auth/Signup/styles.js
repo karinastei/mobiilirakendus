@@ -1,24 +1,22 @@
 import { StyleSheet } from "react-native";
 
-import { Colors, colors } from "../../utils/colors";
+import { colors } from "../../../utils/colors";
 
 export const styles = StyleSheet.create({
     container: {
-        paddingHorizontal: 8,
-        paddingVertical: 20,
-        borderRadius: 8,
+        paddingHorizontal: 20,
         width: '100%'
     },
     inputContainer: {
-        borderWidth: 1,
         borderColor: colors.grey,
         borderRadius: 14,
         flexDirection: 'row',
         alignItems: 'center'
     },
     input: {
+        borderRadius: 14,
         paddingHorizontal: 16,
-        paddingVertical: 20,
+        paddingVertical: 10,
         flex: 1
     },
     label: {
@@ -26,9 +24,19 @@ export const styles = StyleSheet.create({
         color: colors.blue,
         fontWeight: '500'
     },
-    eye: {
-        marginHorizontal: 16,
-        width: 24,
-        height: 24
+    agreeRow: {
+        flexDirection: 'row',
+        alignItems: 'center',
+        paddingHorizontal: 10
+    },
+    agreeText: {
+        color: colors.blue,
+        marginHorizontal: 14
+    },
+    agreeTextBold: {
+        color: colors.blue,
+        marginHorizontal: 14,
+        fontWeight: 'bold'
+
     }
 })
